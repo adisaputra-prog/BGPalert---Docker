@@ -5,3 +5,14 @@ services:
       - ./volume/config.yml:/opt/bgpalerter/config.yml
       - ./volume/prefixes.yml:/opt/bgpalerter/prefixes.yml
       - ./volume/logs:/opt/bgpalerter/logs
+
+  loki:
+    image: grafana/loki:latest
+    command: -config.file=/etc/loki/local-config.yaml
+    ports:
+      - "3100:3100"
+    volumes:
+      - loki-data:/loki
+
+volumes:
+  loki-data:
