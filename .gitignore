@@ -1,0 +1,12 @@
+# BGPalerter runtime logs
+volume/logs/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS / editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

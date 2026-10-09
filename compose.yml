@@ -1,0 +1,7 @@
+services:
+  bgpalerter:
+    image: nttgin/bgpalerter:latest
+    volumes:
+      - ./volume/config.yml:/opt/bgpalerter/config.yml
+      - ./volume/prefixes.yml:/opt/bgpalerter/prefixes.yml
+      - ./volume/logs:/opt/bgpalerter/logs
