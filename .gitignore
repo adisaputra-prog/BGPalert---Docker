@@ -10,3 +10,6 @@ volume/logs/
 .idea/
 .DS_Store
 Thumbs.db
+
+# backups file
+compose.yml.bak
